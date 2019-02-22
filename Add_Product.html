@@ -1,0 +1,296 @@
+<html>
+	<head>
+		<title>Add Product</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles\Main1.css">
+	</head>
+	<body>
+	
+			<div class="logo">  
+			<a>GRIZZLY <img src="images\login.jpg" alt="not_found" width="80" height="25"/>  STORE</a>
+<input type="text" placeholder="Search.." name="search">
+				<div class="right-corner">
+				<img src="images\bell.png" alt="not_found" width="40" height="55"/>
+					<div class="right">Welcome,Admin..    
+					<input type="submit" onclick="login()" class="logout" value="Logout"\>
+					</div>
+				</div>
+			</div>
+<div class="well">
+<div class="row">
+<div class="column-sm" width="25">
+<div class="card">
+			<div class="profile_outer">
+				<div class="image"><br>
+					<div class="profile">
+						<font class ="font_style">PROFILE</font>
+						<font class="style">Edit</font>
+					</div>
+				</div>
+				<br>	
+				<center><b>Helen Cho</b><br><br>
+         			ID<br>GRZLY17234<br><br>
+         			Designation<br>Sr.Admin<br><br>Office<br>NYC,NY,USA<br><br><br><br>
+				
+				</center>
+</div></div></div>
+ <div class="column-lg" width="75">
+    <div class="bs-example" id="left">
+    	<ul class="nav nav-tabs">
+        	<li class="active"><a data-toggle="tab" href="#sectionA">PRODUCTS</a></li>
+        	<li><a data-toggle="tab" href="#sectionB">VENDORS</a></li>
+        	<li><a data-toggle="tab" href="#sectionC">CATEGORY</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div id="sectionA" class="tab-pane fade in active">
+         
+<table>
+<tr><th > <button type="button" class="btn btn-default" >
+          <span class="glyphicon glyphicon-search" ></span> Search by Product/ID
+        </button></th>
+<th > <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Filter by category
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Rating</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Brand</a></li>
+    </ul>
+  </div></th>
+<th> <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Sort by
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></li>
+    </ul>
+  </div></th>
+<th width="3%"><input type="text" class="log" placeholder="AddProduct"\></th></tr></table><br>
+<table rules="all">
+<tr>
+<th>ProductsList</th>
+<th>Brand</th>
+<th>Category</th>
+<th>Rating</th>
+<th></th>
+</tr>
+<tr>
+<td>Trimmer</td>
+<td width="10%">Philips</td>
+<td width="10%">PersonalCare</td>
+<td>4.7</td>
+<td colspan="3"><input type="text" class="logout" value="view"\>
+<input type="text" class="logout" value="Back"\>
+<input type="text" class="logout" value="Browse"\></td>
+</tr>
+<tr>
+<td>Shaver</td>
+<td width="10%">Braun</td>
+<td width="10%">PersonalCare</td>
+<td>4.8</td>
+<td colspan="1"><input type="text" class="logout" value="view"\>
+<input type="text" class="logout" value="Back"\>
+<input type="text" class="logout" value="Remove"\></td>
+</tr>
+<tr>
+<td>MacbookPro</td>
+<td width="10%">Apple</td>
+<td width="10%">Laptops</td>
+<td>4.9</td>
+<td colspan="3"><input type="text" class="logout" value="view"\>
+<input type="text" class="logout" value="Back"\>
+<input type="text" class="logout" value="Remove"\></td>
+</tr>
+<tr>
+<td>iMac27"</td>
+<td width="10%">Apple</td>
+<td width="15%">Laptops</td>
+<td>4.6</td>
+<td colspan="3"><input type="text" class="logout" value="view"\>
+<input type="text" class="logout" value="Back"\>
+<input type="text" class="logout" value="Remove"\></td>
+</tr>
+<tr>
+<td>Micron Pens</td>
+<td width="10%">Sakura Pigma</td>
+<td width="15%">ArtSupplies</td>
+<td>4.1</td>
+<td colspan="3"><input type="text" class="logout" value="view"\>
+<input type="text" class="logout" value="Back"\>
+<input type="text" class="logout" value="Remove"\></td>
+</tr>
+<tr>
+<td>PaintMarkers</td>
+<td width="10%">Copic</td>
+<td width="15%">ArtSupplies</td>
+<td>4.2</td>
+<td colspan="3"><input type="text" class="logout" value="view"\>
+<input type="text" class="logout" value="BAck"\>
+<input type="text" class="logout" value="Remove"\></td>
+</tr>
+</table>
+          	
+        </div>
+        <div id="sectionB" class="tab-pane fade">
+           
+<table>
+<tr><th ><button type="button" class="btn btn-default" >
+          <span class="glyphicon glyphicon-search" ></span> Search by Category
+        </button></th>
+<th > <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Filter by
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Id</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Location</a></li>
+    </ul>
+  </div></th>
+</th></tr></table><br>
+
+<table rules="all">
+<tr>
+<th>VendorName</th>
+<th>ID</th>
+<th>Location</th>
+<th>Contact</th>
+<th></th>
+</tr>
+<tr>
+<td>M/S Agarwal</td>
+<td width="10%">MUM2134</td>
+<td width="15%">Mumbai</td>
+<td>1234567</td>
+<td colspan="3"><input type="text" class="logout" value="view"\>
+<input type="text" class="logout" value="Back"\>
+<input type="text" class="logout" value="Browse"\>
+</tr>
+<tr>
+<td>M/S Saravanam</td>
+<td width="10%">BLR3421</td>
+<td width="15%">Bengaluru</td>
+<td>1234567</td>
+<td colspan="3"><input type="text" class="logout" value="view"\>
+<input type="text" class="logout" value="Back"\>
+<input type="text" class="logout" value="Browse"\>
+</tr>
+<tr>
+<td>M/S Techshop</td>
+<td width="10%">HYD1290</td>
+<td width="15%">Hyderdad</td>
+<td>4.8</td>
+<td colspan="3"><input type="text" class="logout" value="view"\>
+<input type="text" class="logout" value="Back"\>
+<input type="text" class="logout" value="Remove"\>
+</tr>
+<tr>
+<td>M/S eStore</td>
+<td width="10%">CHN4564</td>
+<td width="15%">Chennai</td>
+<td>1234567</td>
+<td colspan="3"><input type="text" class="logout" value="view"\>
+<input type="text" class="logout" value="Back"\>
+<input type="text" class="logout" value="Remove"\>
+</tr>
+<tr>
+<td>M/S Apec</td>
+<td width="10%">DEL1209</td>
+<td width="15%">Delhi</td>
+<td>1234567</td>
+<td colspan="3"><input type="text" class="logout" value="view"\>
+<input type="text" class="logout" value="Back"\>
+<input type="text" class="logout" value="Remove"\>
+</tr>
+<tr>
+<td>M/S eKart</td>
+<td width="10%">BLR3421</td>
+<td width="15%">Bengaluru</td>
+<td>1234567</td>
+<td colspan="3"><input type="text" class="logout" value="view"\>
+<input type="text" class="logout" value="Back"\>
+<input type="text" class="logout" value="Browse"\>
+</tr>
+</table>
+            
+
+        </div>
+        <div id="sectionC" class="tab-pane fade">
+           
+<table>
+<tr><th ><button type="button" class="btn btn-default" >
+          <span class="glyphicon glyphicon-search" ></span> Search by Product/ID
+        </button></th>
+<th > <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Sort by
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">category</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">product</a></li>
+
+    </ul>
+  </div></th>
+<th ><input type="text" class="log" placeholder="AddProduct"\>
+</tr></table><br>
+            <table rules="all">
+<tr>
+<th>Category</th>
+<th>Description</th>
+<th>Product</th>
+<th></th>
+</tr>
+<tr>
+<td>Personal Care</td>
+<td width="35%">Lorem ipsum dolor sit amet, consectetuer
+adipiscing elit, sed diam nonummy nibh
+euismod tincidunt ut laoreet dolore magna
+aliquam erat volutpat. Ut wisi enim ad</td>
+<td>123</td>
+<td colspan="3"><input type="text" class="logout" value="Edit"\>
+<input type="text" class="log1" value="Block"\>
+<input type="text" class="log1" value="Remove"\>
+</tr>
+<tr>
+<td>Electronics</td>
+<td width="25%">Lorem ipsum dolor sit amet, consectetuer</td>
+<td>90</td>
+<td colspan="3"><input type="text" class="logout" value="Edit"\>
+<input type="text" class="log1" value="Block"\>
+<input type="text" class="log1" value="Remove"\>
+</tr>
+</tr>
+<tr>
+<td>Furniture</td>
+<td width="10%">Lorem ipsum</td>
+<td>57</td>
+<td colspan="3"><input type="text" class="logout" value="Edit"\>
+<input type="text" class="log1" value="Block"\>
+<input type="text" class="log1" value="Remove"\>
+</tr>
+<tr>
+<td>Art Supplies</td>
+<td width="35%">Lorem ipsum dolor sit amet, consectetuer
+adipiscing elit, sed diam nonummy nibh
+euismod tincidunt ut laoreet dolore magna</td>
+<td>800</td>
+<td colspan="3"><input type="text" class="logout" value="Edit"\>
+<input type="text" class="log1" value="Block"\>
+<input type="text" class="log1" value="Remove"\>
+</tr>
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+                            
+		<script>
+			function login()
+			{
+				location.href="login.html";
+			}
+		</script>
+	</body>
+</html>

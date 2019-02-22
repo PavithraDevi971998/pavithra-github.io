@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product</title>
+<link rel="stylesheet" type="text/css" href="styles/product.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script>
+function myfunction() {
+  location.replace("login.html");
+}
+</script>
+<body>
+<form name="product" method="get">
+
+<nav class="blok">
+<div>
+<tr><h3> Grizzly <img src="images/login.jpg" height="70px" width="70px">  store     <input type="text" placeholder="Search.." name="search">
+<div class="rgt"><img src="images/bell.png" height="50px" width="50px"> welcome,Admin <input type="button" value="logout" class="btn" onclick="myfunction()" ></h3></div></tr>
+</div>
+</nav>
+
+<br>
+
+<div class="row" >
+<div class="col-sm-4"><nav>
+<pre class="vtl">
+<center><input type="text" STYLE="background-color:gray;"  name="PROFILEEdit" value="PROFILE    Edit" ></center>
+<center><img src="images\login.jpg" height="50px" width="50px"></center>
+
+
+           <strong>Helen Cho</strong>
+
+               ID
+           GRZLY17234
+
+           Designation
+            Sr. Admin
+
+             office
+          NYC, NY, USA
+</pre></div>
+</nav>
+<!--<nav class="blok">
+<div  class="col-sm-4">
+<input type="button" value="PRODUCTS" name="products">
+<input type="button" value="VENDORS" name="Vendors">
+<input type="button" value="Category" name="Category"></div></nav>-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="#">PRODUCTS</a></li>
+      <li><a href="#">VENDORS</a></li>
+      <li><a href="#">CATEGORY</a></li>
+    </ul>
+  </div>
+</nav></div>
+</form>
+</body>
+</html>
